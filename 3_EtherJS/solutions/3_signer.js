@@ -26,7 +26,7 @@ const ethers = require("ethers");
 
 const providerKey = process.env.INFURA_KEY;
 
-const goerliInfuraUrl = `${process.env.INFURA_GOERLI}${providerKey}`;
+const goerliInfuraUrl = `${process.env.INFURA_GOERLI_API_URL}${providerKey}`;
 const goerliProvider = new ethers.JsonRpcProvider(goerliInfuraUrl);
 
 // Exercise 1. Create a Signer.
@@ -75,7 +75,7 @@ const sign = async (message = 'Hello world') => {
     }
 };
 
-// sign();
+sign();
 
 // Exercise 3. Connect to the blockchain. 
 /////////////////////////////////////////

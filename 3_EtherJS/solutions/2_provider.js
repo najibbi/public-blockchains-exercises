@@ -45,9 +45,9 @@ const ethers = require("ethers");
 
 const providerKey = process.env.INFURA_KEY;
 
-const mainnetInfuraUrl = `${process.env.INFURA_MAINNET}${providerKey}`;
-// console.log(mainnetInfuraUrl);
+const mainnetInfuraUrl = `${process.env.INFURA_MAINNET_API_URL}${providerKey}`;
 const mainnetProvider = new ethers.JsonRpcProvider(mainnetInfuraUrl);
+console.log(mainnetProvider);
 
 // b. Verify that the network's name is "mainnet" and the chain id that theis 1.
 
@@ -77,7 +77,7 @@ const network = async () => {
 };
 
 // which you can then call:
-// network();
+network();
 
 // The second (less compact) notation has the advantage that we can invoke
 // the code only when needed, so it is preferred in this exercise sheet.
@@ -109,8 +109,7 @@ const blockNum = async () => {
     let blockNumber = await mainnetProvider.getBlockNumber();
     console.log('Mainnet block number: ', blockNumber);
 };
-
-// blockNum();
+blockNum();
 
 // b. The Ethereum mainnet is one of the most secure blockchains in the world.
 // The testnets of Ethereum are a bit less secure because they might have 
@@ -120,7 +119,7 @@ const blockNum = async () => {
 // Connect to the Goerli test net, get the latest block number and print
 // the difference in chain length with mainnet.
 
-const goerliInfuraUrl = `${process.env.INFURA_GOERLI}${providerKey}`;
+const goerliInfuraUrl = `${process.env.INFURA_GOERLI_API_URL}${providerKey}`;
 // console.log(goerliInfuraUrl);
 const goerliProvider = new ethers.JsonRpcProvider(goerliInfuraUrl);
 
@@ -137,7 +136,7 @@ const blockDiff = async () => {
                 ' blocks ahead');
 }
 
-// blockDiff();
+ blockDiff();
 
 
 // Exercise 3. Block time.
@@ -327,7 +326,7 @@ const balance = async (ensName = "unima.eth") => {
 
 };
 
-// balance("vitalik.eth");
+ balance("vitalik.eth");
 
 
 // Exercise 7. Get ERC20 Balance.
