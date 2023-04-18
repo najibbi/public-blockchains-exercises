@@ -1,0 +1,14 @@
+{
+  "name": "public-blockchains-exercises",
+  "version": "1.0.0",
+  "description": "Exercises of the course \"Public Blockchains\" taught at Uni Mannheim Summer semester 2023.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.2"
+  }
+}
