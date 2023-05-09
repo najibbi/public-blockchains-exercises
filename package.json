@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "public-blockchains-exercises",
   "version": "1.0.0",
   "description": "Exercises of the course \"Public Blockchains\" taught at Uni Mannheim Summer semester 2023.",
@@ -14,5 +15,11 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
     "hardhat": "^2.14.0"
+=======
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.12.2"
+>>>>>>> 247625f2451efc66d712fea7e4c89c66edda38a2
   }
 }
